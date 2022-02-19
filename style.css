@@ -1,0 +1,180 @@
+html, body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.intro {
+    position: absolute;
+    animation-name: intro;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: -2;
+    width: 100%;
+}
+
+.map {
+    width: 100%;
+}
+
+.stop {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.stop-show {
+    animation: fadeIn 7s forwards;
+    z-index: 1;
+    display: block;
+}
+
+rect[id^="step-"] {
+    cursor: pointer;
+}
+
+.stop-hide {
+    animation: fadeOut 3s forwards;
+}
+
+.fish-1 {
+    animation: fish-1 5s infinite ease-in-out forwards alternate;
+}
+
+.fish-2 {
+    animation: fish-2 8s infinite ease-in-out forwards alternate;
+}
+
+.fish-3 {
+    animation: fish-3 10s infinite ease-in-out forwards alternate;
+}
+
+.fish-4 {
+    animation: fish-4 3s infinite ease-in-out forwards alternate;
+}
+
+.fish-5 {
+    animation: fish-5 2s infinite ease-in-out forwards alternate;
+}
+
+.fish-6 {
+    animation: fish-6 15s infinite ease-in-out forwards alternate;
+}
+
+@keyframes fish-1 {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes fish-2 {
+    0% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+@keyframes fish-3 {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes fish-4 {
+    0% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+@keyframes fish-5 {
+    0% {
+        transform: translateY(-40px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes fish-6 {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    90%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes intro {
+    0% {
+        opacity: 1;
+        z-index: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    95% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+path.cls-1310, path.cls-1472, circle.cls-1095, circle.cls-1169, path.cls-317, path.cls-1217, path.cls-1353 {
+    fill: whitesmoke;
+}
